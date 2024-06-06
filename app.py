@@ -1,9 +1,14 @@
 from flask import Flask
+
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
+@app.route('/backxlash')
+def backxlash():
+    return 'We Are BACKXLASH'
 
-if __name__== "__main__":
+@app.route('/contact_us')
+def contact_us():
+    return 'CALL AT : 03034407897'
+
+if __name__ == "__main__":
     app.run(debug=True)
