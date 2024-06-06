@@ -1,10 +1,11 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/backxlash')
+@app.route('/')
 def backxlash():
-    return 'We Are BACKXLASH'
+    return render_template('index.html', title='Welcome to My Flask App')
 
 @app.route('/contact_us')
 def contact_us():
